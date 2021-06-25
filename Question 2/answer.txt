@@ -1,0 +1,3 @@
+Phân trang là một tính năng thường được sử dụng trong cơ sở dữ liệu. Có một số cách để thực hiện phân trang trong SQL nhưng có thể  quy về  hai loại:
+	- Loại thứ nhất: Một kỹ thuật sử dụng trong các phiên bản trước SQL server 2012 là sử dụng hàm ROW_NUMBER. Hàm ROW_NUMBER, giống như nhiều anh chị em của nó (tức là RANK, v.v.), là một hàm cửa sổ trả về một giá trị số nguyên tuần tự trên mỗi hàng của một phân vùng nhất định của tập kết quả.
+	- Loại thứ hai: Sử dụng đối số OFFSET-FETCHSET. Đối số OFFSET-FETCH giúp triển khai bao nhiêu hàng chúng ta muốn bỏ qua và bao nhiêu hàng chúng ta muốn hiển thị trong tập kết quả khi chúng ta sử dụng chúng với mệnh đề ORDER BY trong câu lệnh SELECT .

@@ -1,0 +1,7 @@
+SELECT student_id, COUNT(absent_flag) as "number_of_absent"
+FROM
+    (SELECT DISTINCT student_id, checkin_date
+    FROM attendance
+    WHERE absent_flag == true)
+GROUP BY student_id
+HAVING COUNT(absent_flag) > 3
